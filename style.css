@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+html {
+  font-family: sans-serif;
+  color: #fee;
+  background-size: cover;
+}
+
+h1 {
+  color: #fafafa;
+  font-size: 40px;
+}
+body {
+  width: auto;
+  background-color: #fafafa;
+  max-width: 800px;
+  min-width: 480px;
+  margin: 0 auto;
+}
+.required {
+  color: #fee;
+  font-size: 0.9em;
+  padding: 3px;
+  background-color: #fee;
+}
+.form {
+  font-family: sans-serif;
+  font-size: 20px;
+  color: #fafafa;
+}
+
+.form input[type="number"] {
+  width: 200px;
+  background-color: #fff;
+  color: black;
+  font-size: 25px;
+  margin: 10px auto;
+  border: none;
+  padding: 10px; /* 内側の余白 */
+}
+
+input:invalid + .error {
+  display: block;
+  color: red;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid #d1d1d1;
+  font: size 1.2em;
+  width: 100%;
+  padding: 8px;
+  background-color: #2096f3;
+  color: #fff;
+  padding: 15px;
+  border: 0;
+  border-radius: 3px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+input:hover {
+  background-color: ;
+}
+
+.guesses  /*あなたの答え*/ {
+  font-size: 20px;
+  color: #c5f320;
+}
+button {
+  margin: 10px auto;
+  width: 200px;
+  height: 50px;
+  padding: 15px;
+  border: none;
+  border-bottom: 1px solid #d1d1d1;
+  font: size 1.2em;
+  width: 50%;
+  padding: 8px;
+  background-color: #2096f3;
+  color: #fff;
+  border: 0;
+  border-radius: 3px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+.a {
+  /* margin-top: 0; */
+}
+
+/* wrap */
+
+.hero {
+  position: relative;
+}
+
+/* video */
+
+.video-box {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+.video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 381%;
+  min-height: 100%;
+  /* -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%); */
+  transform: translate(-50%, -50%);
+}
+
+/* overlay */
+
+.overlay::after {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 60%;
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* text */
+
+.text-box {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  /* -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%); */
+  transform: translate(-50%, -50%);
+}

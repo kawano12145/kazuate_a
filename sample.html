@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <meta http-equiv="X-UA-Compatible" content="chrome" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>数当てゲーム</title>
+  </head>
+  <div class="a">
+    <section class="hero">
+
+      <div class ="video-box overlay"> 
+        <video class="video" muted autoplay loop playsinline>
+          <source src="http://nowte.net/public/movie.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="text-box" id="parent"> 
+        
+        <h1>数当てゲーム</h1>
+        
+        <p>
+          1から100までの数字の中で相手が選択した数字を<br>
+          5ターン以内に当ててください！<br />
+          ※あなたが選んだ数字が相手よりも小さい又は<br>大きい場合は相手が答えのヒントを教えてくれます！
+          <br />
+        </p>
+        
+        <div class="form">
+          <label for="guessField">あなたの好きな数字を選択してください！ </label>
+          <br />
+          <input type="number" min="1" max="100" required id="guessField" class="guessField"/></div>
+      <p></p>
+      <div class="submit">
+        <input type="submit" value="決定" class="guessSubmit" />
+      </div>
+      
+      
+           
+      
+
+      <div class="resultParas">
+        <p class="guesses"></p>
+        <p class="lastResult"></p>
+        <p class="lowOrHi"></p>
+        <p class="setGameOver"></p>
+      </div>
+      </div>
+    </div>
+    </section>
+
+
+
+
+    <script src="main.js"></script>
+  </body>
+  
+</html>
